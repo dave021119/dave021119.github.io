@@ -1,0 +1,164 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://news.youth.cn/images/20221016_esd_banner_newnew.jpg">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Linux学习笔记</title>
+
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        text-align: center;
+        
+    }
+
+    p{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    h2,
+    h3
+   {
+        font-size: 40px;
+      padding: 0;
+      margin: 0;
+      list-style: none
+    }
+
+    a {
+      text-decoration: none;
+      color: #000
+    }
+
+    body {
+      background: url("https://img0.baidu.com/it/u=733115477,2447315394&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281") no-repeat center top rgb(141, 90, 90);
+      background-size: auto 674px
+
+    }
+
+    body {
+      width: 1200px;
+      margin: 0 auto;
+      line-height: 21px
+    }
+
+    .clear {
+      clear: both
+    }
+
+    .ff {
+      margin: 0;0
+      padding: 40px 0;
+      color: #fff
+    }
+    .content {
+      background: rgb(190, 175, 175);
+      padding-bottom: 20px;
+      font-size: 14px;
+      display: inline-block;
+      width: 100%
+    }
+
+   
+    .end {
+      clear: both;
+      background: #215a8b;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+
+
+    .vidiobox {
+
+      ;
+    }
+    
+
+    .scrollleft {
+      padding-top: 10px;
+      padding:0px;
+      padding-left:10px;
+      height: 250px;
+    }
+
+
+   
+
+    .bar {
+      margin: 10px 20px;
+      clear: both;
+      border-bottom: #666 solid 1px;
+      font-weight: bold;
+      padding: 15px;
+      font-size: 24px
+    }
+
+ .bar2 {
+      margin: 10px 20px;
+      clear: both;
+      border-bottom: #666 solid 1px;
+      text-align: center;
+      font-weight: bold;
+      padding: 15px;
+      margin-top: 0;
+      font-size: 25px
+    }
+
+    .bar2 h3 {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      padding: 0 20px;
+      top: 25px;
+      display: inline-block
+    }
+
+  </style>
+
+</style>
+<body>
+<h1>Linux学习笔记</h1>
+
+  <div class="content">
+     <div class="bar2">
+      <h3>简介</h3>
+    </div> 
+    <div class="scrollleft" id="scrollleft">   
+       <p>Linux，是一种免费使用和自由传播的类UNIX操作系统，其内核由林纳斯·本纳第克特·托瓦兹（Linus Benedict Torvalds）于1991年10月5日首次发布，它主要受到Minix和Unix思想的启发，是一个基于POSIX的多用户、多任务、支持多线程和多CPU的操作系统。</p>
+       <p>Linux操作系统具有：开源，完全免费，可移植性强，安全稳定， 支持多任务并行处理技术，支持网络功能，支持多种终端类型等特点，因此，在现如今的互联网行业，它被广泛用作开发环境，是一名程序员必须学会使用的一套系统。</p>
+    </div>
+    <div class="bar2">
+      <h3>命令学习</h3>
+    </div>
+<div class="vidiobox">
+    <br>
+   <p> · pwd：pwd 命令用于显示当前所处的工作目录的路径。它返回当前目录的绝对路径。例如，如果当前目录是 /home/user/Documents，那么运行 pwd 命令将会输出 /home/user/Documents。</p>
+    <p>· ls：ls 命令用于列出当前目录下的文件和子目录。并形式显示文件和目录的名称。</p>
+    <p> · cd：cd 命令用于切换当前工作目录。通过使用 cd 命令，您可以进入到其他目录中工作。例如，cd /lkhdsg/123 将进入 /lkhdsg/123 目录。</p>
+    <p> · mkdir：mkdir 命令用于创建一个新的目录。您可以指定要创建的目录的名称作为参数。例如，mkdir lkh 将在当前目录下创建一个名为 "lkh" 的目录。</p>
+    <p> · rm：rm 命令用于删除文件或目录。您可以通过指定要删除的文件或目录的名称作为参数来使用它。例如，rm file.txt 将删除名为 "file.txt" 的文件。</p>
+    <p> · cp：cp 命令用于复制文件或目录。您需要指定要复制的文件或目录的名称，并提供目标位置作为参数。例如，cp 123.txt lkhdsg/ 将把 "123.txt" 文件复制到 "lkhdsg" 目录下。</p>
+    <p>· mv：mv 命令用于移动文件或目录，或者对文件或目录进行重命名。您需要指定要移动/重命名的文件或目录的名称，以及目标位置或新的名称。例如，mv file.txt new_location/ 将把 "file.txt" 移动到 "new_location" 目录下。</p>
+    <p> · >符号: >符号被用作重定向操作符，其主要作用是将命令的输出结果重定向到指定文件中，或者创建一个新的文件并将输出写入其中。例如，history > lkh.txt 将 history命令的输出内容写入名为 "lkh.txt" 的文件中。如果文件已经存在，则会覆盖原有内容；如果文件不存在，则会创建一个新文件并将输出写入其中。</p>
+    <p> · history :history命令用于显示从开始使用Linux系统开始，自己所使用的每一条命令的记录。</p>
+    <p>· tar:用于进行打包和解包、压缩和解压缩等操作，使用tar命令打出来的包被称为tar包。例如：tar -xf lkh 将lkh文件解包到当前目录，又如tar -cvf package.tar test1 test2 将test1和test2打包到package.tar文件，并显示打包过程</p>
+    <div class="bar2">
+      <h3>总结</h3>
+    </div>
+    <div class="scrollleft2"> 
+        <p>在这两周对Linux系统的学习过程中，我明显感觉到相比于传统用户使用的windows系统，Linux要求使用者有相当严谨的逻辑性，通过对这一系统的初识，加深了我对计算机系统的认识。</p> 
+    </div>   
+<div class="bar2">
+   
+  </div>
+  
+  <div class="end">
+    <p>20213613 刘可汉</p>
+  </div>
+  </div>
+</body>
+</html>

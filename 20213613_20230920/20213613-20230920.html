@@ -1,0 +1,177 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://news.youth.cn/images/20221016_esd_banner_newnew.jpg">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Linux学习——利用grep进行公司分类</title>
+
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        text-align: center;
+        
+    }
+
+    p{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    h2,
+    h3
+   {
+        font-size: 40px;
+      padding: 0;
+      margin: 0;
+      list-style: none
+    }
+
+    a {
+      text-decoration: none;
+      color: #000
+    }
+
+    body {
+      background: url("https://img0.baidu.com/it/u=733115477,2447315394&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=281") no-repeat center top rgb(141, 90, 90);
+      background-size: auto 674px
+
+    }
+
+    body {
+      width: 1200px;
+      margin: 0 auto;
+      line-height: 21px
+    }
+
+    .clear {
+      clear: both
+    }
+
+    .ff {
+      margin: 0;
+      padding: 40px 0;
+      color: #fff
+    }
+    .content {
+      background: rgb(190, 175, 175);
+      padding-bottom: 20px;
+      font-size: 14px;
+      display: inline-block;
+      width: 100%
+    }
+
+   
+    .end {
+      clear: both;
+      background: #215a8b;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .scrollleft {
+      padding-top: 10px;
+      padding:0px;
+      padding-left:10px;
+
+    }
+    .abc{
+        width: 150px;
+        height: 75px;
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 40px;
+        background-color: #d07a7a;
+       
+    }
+
+   
+
+    .bar {
+      margin: 10px 20px;
+      clear: both;
+      border-bottom: #666 solid 1px;
+      font-weight: bold;
+      padding: 15px;
+      font-size: 24px
+    }
+
+ .bar2 {
+      margin: 10px 20px;
+      clear: both;
+      border-bottom: #666 solid 1px;
+      text-align: center;
+      font-weight: bold;
+      padding: 15px;
+      margin-top: 0;
+      font-size: 25px
+    }
+
+    .bar2 h3 {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      padding: 0 20px;
+      top: 25px;
+      display: inline-block
+    }
+
+  </style>
+
+</style>
+<body>
+<h1>公司分类</h1>
+
+  <div class="content">
+     <div class="bar2">
+      <h3>公司种类</h3>
+    </div> 
+    <div class="scrollleft" id="scrollleft">   
+            <button class="abc" type="button" onclick="myfunction1()">科技公司</button>
+            <button class="abc" type="button" onclick="myfunction2()">教育公司</button>
+            <button class="abc" type="button" onclick="myfunction3()">软件公司</button>
+           <button class="abc" type="button" onclick="myfunction4()">网络公司</button>
+           <button class="abc" type="button" onclick="myfunction5()">餐饮公司</button>
+           <button class="abc" type="button" onclick="myfunction6()">工程公司</button>
+        </ul>
+    </div>
+    <div class="bar2">
+      <h3>公司名称</h3>
+    </div>
+<div class="vidiobox">
+    <iframe id="word" src="" width="1200" height="500" ></iframe>
+</div>  
+<div class="bar2">
+  <h3>总结</h3>
+</div>
+<div class="scrollleft2"> 
+    <p>grep命令是Linux系统中非常重要的命令之一，它的功能是从文本文件或管道数据流中筛选匹配的行和数据。通过使用正则表达式，grep命令可以实现强大的筛选功能。Linux运维人员通常都会使用grep命令来查找特定模式的文本。在使用grep命令时，需要注意对一些特殊字符进行转义，以确保它们被正确地解释。例如，在grep命令中，如果想要匹配点字符.本身，需要使用\来转义，否则grep会将点字符解释为匹配任意一个字符。此外，在Linux平台下，所有文件的结尾都有一个$符号可以利用cat -A命令来查看文件的结尾符号。除了grep命令外，Linux系统还有其他一些常用的命令，如chmod用于修改文件或目录的权限，chown用于修改文件或目录的所有者，chgrp用于修改文件或目录的所属组，tar用于打包和压缩文件，wget用于从网络下载文件，ssh用于通过安全的Shell连接到远程服务器。</p> 
+</div>   
+  <div class="end">
+    <p>20213613 刘可汉</p>
+  </div>
+  </div>
+</body>
+<script>
+    function myfunction1() {
+        document.getElementById("word").src = "txt/science.txt";
+    }
+    function myfunction2() {
+        document.getElementById("word").src = "txt/taech.txt";
+    }
+    function myfunction3() {
+        document.getElementById("word").src = "txt/soft.txt";
+    }
+    function myfunction4() {
+        document.getElementById("word").src = "txt/internet.txt";
+    }
+    function myfunction5() {
+        document.getElementById("word").src = "txt/food.txt";
+    }
+    function myfunction6() {
+        document.getElementById("word").src = "txt/gc.txt";
+    }
+</script>
+</html>
